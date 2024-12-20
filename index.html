@@ -59,8 +59,14 @@
                 top: 30px;
             }
         </style>
+
+        <script>
+            function showAlert() {
+                TelegramWebviewProxy.postEvent('web_app_open_popup', '{title:"Test", message:"Test message", [{id:"",type:"close"}]}');
+            }
+        </script>
     </head>
     <body>
-        <a href="javascript:TelegramWebviewProxy.postEvent('web_app_open_link', '{ url:'https://xiran56.github.io/scenca', try_browser: true }')">Сценка</a>
+        <button onclick="showAlert()">Show an alert</button>
     </body>
 </html>
