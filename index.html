@@ -62,11 +62,13 @@
 
         <script>
             function showAlert() {
-                TelegramWebviewProxy.postEvent('web_app_open_popup', '{title:"Test", message:"Test message", [{id:"",type:"close"}]}');
+                TelegramWebviewProxy.postEvent('web_app_open_popup', '{"message":"Test","buttons":[{"id":"","type":"close"}]}');
             }
         </script>
     </head>
     <body>
+        <script></script>
+
         <button onclick="showAlert()">Show an alert</button>
     </body>
 </html>
