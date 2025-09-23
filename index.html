@@ -52,15 +52,6 @@ along with web-doc-viewer. If not, see <https://www.gnu.org/licenses/agpl-3.0.en
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-	    <header id="menubar-panel">
-		    <details>
-	    	    <summary>Редактировать</summary>
-			    <menu>
-				    <li onclick="show_search_panel()">Найти...
-			    </menu>
-    		</details>
-	    </header>
-
 	    <main id="page-panel">
 		    	<div id="message">
 			    Загрузка библиотеки просмотра...
@@ -69,19 +60,6 @@ along with web-doc-viewer. If not, see <https://www.gnu.org/licenses/agpl-3.0.en
 				<!-- pages inserted here -->
 			</div>
 	    </main>
-
-    	<footer id="search-panel" style="display:none">
-	    	<input
-		    	id="search-input"
-			    type="search"
-			    size="40"
-		    	placeholder="Найти..."
-		    >
-	    	<button id="search-prev" onclick="run_search(-1, 1)">&#x3C;</button>
-	    	<button id="search-next" onclick="run_search(1, 1)">&#x3E;</button>
-		    <div id="search-status" style="flex-grow:1"></div>
-		    <button onclick="hide_search_panel()">X</button>
-    	</footer>
 
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
         <script src="viewer.js"></script>
